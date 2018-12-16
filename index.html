@@ -5,9 +5,11 @@
     </head>
 
     <body>
-        hello world
-        why jsonp doesn't work?
-        <h1>this is an big title</h1>
+        <h1>jsonp works!</h1>
+        <h2>now I can read data from my own svr</h2>
+        <h3>time to bed</h3>
+        <h3>The random number from my svr: </h3>
+        <h3 id='random-int'></h3>
         <script type='text/javascript'>
             $.ajax({
                 url:'http://wuqiaokeji.com/myAPI/jsonp_get_random_number',
@@ -15,7 +17,7 @@
                 jsonp: "callback",
                 success:function(data){
                     //console.log(data);
-                    alert(data)
+                    $('#random-int').val(data)
                 }
             });
 
