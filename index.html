@@ -10,17 +10,6 @@
         <h3>time to bed</h3>
         <h3>The random number from my svr: </h3>
         <h3 id='random-int'></h3>
-        <script type='text/javascript'>
-            $.ajax({
-                url:'https://wuqiaokeji.com/myAPI/jsonp_get_random_number',
-                dataType:"jsonp",
-                jsonp: "callback",
-                success:function(data){
-                    //console.log(data);
-                    $('#random-int').text(data)
-                }
-            });
-
-        </script>
+        <script type='text/javascript' src='jsonpTest.js'></script>
     </body>
 </html>
