@@ -7,10 +7,9 @@
     <body>
         <script type='text/javascript'>
             $.ajax({
-                url:'https://wuqiaokeji.com/myAPI/get_random_number',
+                url:'http://wuqiaokeji.com/myAPI/jsonp_get_random_number',
                 dataType:"jsonp",
                 jsonp: "callback",
-                jsonpCallback:"ooo",
                 success:function(data){
                     //console.log(data);
                     alert(data)
