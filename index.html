@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"> -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     </head>
 
     <body>
@@ -9,15 +9,15 @@
         why jsonp doesn't work?
         <h1>this is an big title</h1>
         <script type='text/javascript'>
-            //$.ajax({
-            //    url:'http://wuqiaokeji.com/myAPI/jsonp_get_random_number',
-            //    dataType:"jsonp",
-            //    jsonp: "callback",
-            //    success:function(data){
-            //        //console.log(data);
-            //        alert(data)
-            //    }
-            //});
+            $.ajax({
+                url:'http://wuqiaokeji.com/myAPI/jsonp_get_random_number',
+                dataType:"jsonp",
+                jsonp: "callback",
+                success:function(data){
+                    //console.log(data);
+                    alert(data)
+                }
+            });
 
         </script>
     </body>
